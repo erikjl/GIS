@@ -1,0 +1,1546 @@
+{
+ "currentVersion": 10.81,
+ "cimVersion": "2.6.0",
+ "id": 0,
+ "name": "Known Developments",
+ "type": "Feature Layer",
+ "parentLayer": null,
+ "defaultVisibility": true,
+ "minScale": 0,
+ "maxScale": 0,
+ "canScaleSymbols": false,
+ "geometryType": "esriGeometryPolygon",
+ "description": "",
+ "copyrightText": "",
+ "editFieldsInfo": {
+  "creationDateField": "created_date",
+  "creatorField": "created_user",
+  "editDateField": "last_edited_date",
+  "editorField": "last_edited_user"
+ },
+ "syncCanReturnChanges": true,
+ "relationships": [],
+ "isDataVersioned": false,
+ "isDataArchived": false,
+ "isDataBranchVersioned": false,
+ "isDataReplicaTracked": false,
+ "isCoGoEnabled": false,
+ "supportsRollbackOnFailureParameter": true,
+ "supportsStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportsValidateSQL": true,
+ "supportsCoordinatesQuantization": true,
+ "supportsCalculate": true,
+ "supportsASyncCalculate": true,
+ "advancedQueryCapabilities": {
+  "supportsReturningQueryExtent": true,
+  "supportsStatistics": true,
+  "supportsDistinct": true,
+  "supportsPagination": true,
+  "supportsOrderBy": true,
+  "supportsQueryWithDistance": true,
+  "supportsLod": true,
+  "supportsPaginationOnAggregatedQueries": true,
+  "supportsQueryWithResultType": true,
+  "supportsCountDistinct": true,
+  "supportsReturningGeometryCentroid": true,
+  "supportsHavingClause": true,
+  "supportsQueryWithLodSR": true,
+  "supportsTopFeaturesQuery": true,
+  "supportsOrderByOnlyOnLayerFields": false,
+  "supportsPercentileStatistics": true,
+  "supportsQueryAttachments": true,
+  "supportsQueryAttachmentsWithReturnUrl": true,
+  "supportsQueryWithDatumTransformation": true
+ },
+ "extent": {
+  "xmin": -1.3265363373E7,
+  "ymin": 5839121.877800003,
+  "xmax": -1.2880901900899999E7,
+  "ymax": 6217740.999799997,
+  "spatialReference": {
+   "wkid": 102100,
+   "latestWkid": 3857,
+   "xyTolerance": 0.001,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -20037700,
+   "falseY": -30241100,
+   "xyUnits": 10000,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "drawingInfo": {
+  "renderer": {
+   "type": "uniqueValue",
+   "field1": "load_type",
+   "defaultSymbol": {
+    "type": "esriSFS",
+    "style": "esriSFSSolid",
+    "color": [
+     130,
+     130,
+     130,
+     255
+    ],
+    "outline": {
+     "type": "esriSLS",
+     "style": "esriSLSSolid",
+     "color": [
+      110,
+      110,
+      110,
+      255
+     ],
+     "width": 0.7
+    }
+   },
+   "defaultLabel": "<all other values>",
+   "uniqueValueInfos": [
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       112,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.7
+      }
+     },
+     "value": "COM",
+     "label": "Commercial"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       187,
+       252,
+       179,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.7
+      }
+     },
+     "value": "EV",
+     "label": "EV Charger"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       132,
+       0,
+       168,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.7
+      }
+     },
+     "value": "HTL",
+     "label": "Hotel"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       204,
+       252,
+       252,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.7
+      }
+     },
+     "value": "HYD",
+     "label": "Hydro"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       230,
+       230,
+       0,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.7
+      }
+     },
+     "value": "IND",
+     "label": "Industrial"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       190,
+       255,
+       232,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.7
+      }
+     },
+     "value": "IRR",
+     "label": "Irrigation Pumps"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       168,
+       0,
+       0,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.7
+      }
+     },
+     "value": "MFR",
+     "label": "Multi-Family Residential"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       197,
+       0,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.7
+      }
+     },
+     "value": "MIX",
+     "label": "Mixed-Use"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       104,
+       104,
+       104,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.7
+      }
+     },
+     "value": "OTH",
+     "label": "Other"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       168,
+       112,
+       0,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.7
+      }
+     },
+     "value": "ROK",
+     "label": "Rock Crusher"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       127,
+       127,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.7
+      }
+     },
+     "value": "SFR",
+     "label": "Single Family Residential"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       209,
+       255,
+       115,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.7
+      }
+     },
+     "value": "SOL",
+     "label": "Solar"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       209,
+       255,
+       115,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.7
+      }
+     },
+     "value": "WND",
+     "label": "Wind Turbine"
+    }
+   ],
+   "fieldDelimiter": ",",
+   "authoringInfo": {
+    "colorRamp": {
+     "type": "multipart",
+     "colorRamps": [
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        217,
+        199,
+        252,
+        255
+       ],
+       "toColor": [
+        217,
+        199,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        184,
+        252,
+        179,
+        255
+       ],
+       "toColor": [
+        184,
+        252,
+        179,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        214,
+        182,
+        255
+       ],
+       "toColor": [
+        252,
+        214,
+        182,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        210,
+        252,
+        250,
+        255
+       ],
+       "toColor": [
+        210,
+        252,
+        250,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        189,
+        208,
+        255
+       ],
+       "toColor": [
+        252,
+        189,
+        208,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        241,
+        252,
+        197,
+        255
+       ],
+       "toColor": [
+        241,
+        252,
+        197,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        179,
+        251,
+        255
+       ],
+       "toColor": [
+        252,
+        179,
+        251,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        199,
+        224,
+        252,
+        255
+       ],
+       "toColor": [
+        199,
+        224,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        202,
+        252,
+        215,
+        255
+       ],
+       "toColor": [
+        202,
+        252,
+        215,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        215,
+        210,
+        255
+       ],
+       "toColor": [
+        252,
+        215,
+        210,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        204,
+        244,
+        255
+       ],
+       "toColor": [
+        252,
+        204,
+        244,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        240,
+        215,
+        255
+       ],
+       "toColor": [
+        252,
+        240,
+        215,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        179,
+        201,
+        252,
+        255
+       ],
+       "toColor": [
+        179,
+        201,
+        252,
+        255
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 50,
+  "labelingInfo": [
+   {
+    "labelExpressionInfo": {"expression": "$feature.NAME"},
+    "labelPlacement": "esriServerPolygonPlacementAlwaysHorizontal",
+    "multiPart": "labelLargest",
+    "allowOverrun": true,
+    "deconflictionStrategy": "static",
+    "repeatLabel": false,
+    "stackLabel": true,
+    "stackRowLength": 24,
+    "stackAlignment": "dynamic",
+    "removeDuplicates": "none",
+    "useCodedValues": true,
+    "maxScale": 0,
+    "minScale": 150000,
+    "name": "Class 1",
+    "priority": -1,
+    "symbol": {
+     "type": "esriTS",
+     "color": [
+      0,
+      0,
+      0,
+      255
+     ],
+     "backgroundColor": null,
+     "borderLineColor": null,
+     "borderLineSize": null,
+     "verticalAlignment": "bottom",
+     "horizontalAlignment": "left",
+     "rightToLeft": false,
+     "angle": 0,
+     "xoffset": 0,
+     "yoffset": 0,
+     "kerning": true,
+     "haloColor": null,
+     "haloSize": null,
+     "font": {
+      "family": "Tahoma",
+      "size": 10,
+      "style": "normal",
+      "weight": "normal",
+      "decoration": "none"
+     }
+    }
+   }
+  ]
+ },
+ "hasM": false,
+ "hasZ": true,
+ "supportsVCSProjection": true,
+ "allowTrueCurvesUpdates": false,
+ "onlyAllowTrueCurveUpdatesByTrueCurveClients": true,
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "objectIdField": "objectid",
+ "globalIdField": null,
+ "displayField": "notes",
+ "typeIdField": "load_type",
+ "fields": [
+  {
+   "name": "objectid",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null,
+   "nullable": false,
+   "defaultValue": null,
+   "modelName": "objectid",
+   "editable": false
+  },
+  {
+   "name": "name",
+   "type": "esriFieldTypeString",
+   "alias": "Name",
+   "domain": null,
+   "editable": true,
+   "nullable": false,
+   "length": 50,
+   "defaultValue": null,
+   "modelName": "name",
+   "description": "{\"fieldValueType\":\"\",\"value\":\"Unique name for this development.\"}"
+  },
+  {
+   "name": "load_type",
+   "type": "esriFieldTypeString",
+   "alias": "Load Type",
+   "domain": {
+    "name": "LoadType",
+    "type": "codedValue",
+    "codedValues": [
+     {
+      "name": "Commercial",
+      "code": "COM"
+     },
+     {
+      "name": "Single Family Residential",
+      "code": "SFR"
+     },
+     {
+      "name": "Multi-Family Residential",
+      "code": "MFR"
+     },
+     {
+      "name": "Mixed-Use",
+      "code": "MIX"
+     },
+     {
+      "name": "Irrigation Pumps",
+      "code": "IRR"
+     },
+     {
+      "name": "Rock Crusher",
+      "code": "ROK"
+     },
+     {
+      "name": "EV Charger",
+      "code": "EV"
+     },
+     {
+      "name": "Hotel",
+      "code": "HTL"
+     },
+     {
+      "name": "Solar",
+      "code": "SOL"
+     },
+     {
+      "name": "Wind Turbine",
+      "code": "WND"
+     },
+     {
+      "name": "Hydro",
+      "code": "HYD"
+     },
+     {
+      "name": "Other",
+      "code": "OTH"
+     },
+     {
+      "name": "Industrial",
+      "code": "IND"
+     }
+    ]
+   },
+   "editable": true,
+   "nullable": false,
+   "length": 50,
+   "defaultValue": null,
+   "modelName": "load_type",
+   "description": "{\"fieldValueType\":\"\",\"value\":\"Coded domain of load types (Commercial, Single Family Residential, Solar, Rock Crusher, etc). Types indicate load usage patterns and load density.\"}"
+  },
+  {
+   "name": "est_in_use_date",
+   "type": "esriFieldTypeDate",
+   "alias": "Est. In Use Date",
+   "domain": null,
+   "editable": true,
+   "nullable": false,
+   "length": 29,
+   "defaultValue": null,
+   "modelName": "est_in_use_date",
+   "description": "{\"fieldValueType\":\"\",\"value\":\"This will be the date we first see load impacts on our system. Coupled with Est Compete Date, we can interpolate/guess the loading over time if the development takes a long time to fully build out.\"}"
+  },
+  {
+   "name": "est_complete_date",
+   "type": "esriFieldTypeDate",
+   "alias": "Est. Complete Date",
+   "domain": null,
+   "editable": true,
+   "nullable": false,
+   "length": 29,
+   "defaultValue": null,
+   "modelName": "est_complete_date",
+   "description": "{\"fieldValueType\":\"\",\"value\":\"The estimate date where this development will be complete. For smaller timeframes of less than 1 year, this can be the same as 'Est. In Use Date'. It's used to interpolate/guess loading between the 'Est In Use Date' and this date.\"}"
+  },
+  {
+   "name": "confidence_pct",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Confidence %",
+   "domain": {
+    "name": "Known Developments_confidence_pct_b4c58e3f-a073-4f4f-8f04-4b779116fb3c",
+    "type": "range",
+    "range": [
+     "0",
+     "100"
+    ]
+   },
+   "editable": true,
+   "nullable": false,
+   "defaultValue": 100,
+   "modelName": "confidence_pct",
+   "description": "{\"fieldValueType\":\"\",\"value\":\"Default is 100% unless we have doubts about this development.\"}"
+  },
+  {
+   "name": "notes",
+   "type": "esriFieldTypeString",
+   "alias": "Notes",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "notes",
+   "description": "{\"fieldValueType\":\"\",\"value\":\"A large field for notes. \\n\\nYou can add HTTP links like so:  \\n                  &lt;a href=\\\"http://google.com\\\" target=\\\"_top\\\"&gt;Google&lt;/a&gt;\"}"
+  },
+  {
+   "name": "developer_name",
+   "type": "esriFieldTypeString",
+   "alias": "Developer Name",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "developer_name",
+   "description": "{\"fieldValueType\":\"\",\"value\":\"Optional field to hold the name of the developer. \"}"
+  },
+  {
+   "name": "developer_phone",
+   "type": "esriFieldTypeString",
+   "alias": "Developer Phone#",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "developer_phone",
+   "description": "{\"fieldValueType\":\"\",\"value\":\"Optional\"}"
+  },
+  {
+   "name": "developer_email",
+   "type": "esriFieldTypeString",
+   "alias": "Developer Email",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "developer_email",
+   "description": "{\"fieldValueType\":\"\",\"value\":\"You can use a link here: mailto:erik.lee@avistacorp.com\"}"
+  },
+  {
+   "name": "num_res_units",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Num Residential Units",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "defaultValue": null,
+   "modelName": "num_res_units",
+   "description": "{\"fieldValueType\":\"\",\"value\":\"If this is a residential or mixed use development, enter the number of units we're estimating.\"}"
+  },
+  {
+   "name": "sqft",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Square Ft.",
+   "domain": {
+    "name": "Known Developments_sqft_2eed6225-0909-4227-8f6f-c0515c2d38b4",
+    "type": "range",
+    "range": [
+     "0",
+     "10000000"
+    ]
+   },
+   "editable": true,
+   "nullable": true,
+   "defaultValue": null,
+   "modelName": "sqft",
+   "description": "{\"fieldValueType\":\"\",\"value\":\"If this is a commercial, industrial, or mixed use, estimate the square ft. Used to calculate loading estimates.\"}"
+  },
+  {
+   "name": "gas_load_est",
+   "type": "esriFieldTypeDouble",
+   "alias": "Gas Load Estimate",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "defaultValue": null,
+   "modelName": "gas_load_est",
+   "description": "{\"fieldValueType\":\"\",\"value\":\"Used by Gas Planning, who will fill out this field.\"}"
+  },
+  {
+   "name": "kva_est",
+   "type": "esriFieldTypeDouble",
+   "alias": "KVA Est.",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "defaultValue": null,
+   "modelName": "kva_est",
+   "description": "{\"fieldValueType\":\"\",\"value\":\"Electric loading estimate. Can be directly entered if know, or can be derived via SqFt/Num Residential Units.\"}"
+  },
+  {
+   "name": "iscomplete",
+   "type": "esriFieldTypeString",
+   "alias": "IsComplete",
+   "domain": {
+    "name": "YesNo",
+    "type": "codedValue",
+    "codedValues": [
+     {
+      "name": "Yes",
+      "code": "Yes"
+     },
+     {
+      "name": "No",
+      "code": "No"
+     },
+     {
+      "name": "Unsure",
+      "code": "Unsure"
+     }
+    ]
+   },
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": "No",
+   "modelName": "iscomplete",
+   "description": "{\"fieldValueType\":\"\",\"value\":\"Yes/No - if marked 'Yes', it won't show up in the Known Developments layer, but it WILL show up in Known Developments (Completed) layer.\"}"
+  },
+  {
+   "type": "esriFieldTypeDouble",
+   "nullable": true,
+   "editable": false,
+   "domain": null,
+   "defaultValue": null,
+   "virtual": true,
+   "name": "SHAPE__Length",
+   "alias": "SHAPE__Length"
+  },
+  {
+   "type": "esriFieldTypeDouble",
+   "nullable": true,
+   "editable": false,
+   "domain": null,
+   "defaultValue": null,
+   "virtual": true,
+   "name": "SHAPE__Area",
+   "alias": "SHAPE__Area"
+  },
+  {
+   "name": "ava_contatct",
+   "type": "esriFieldTypeString",
+   "alias": "Avista Contact",
+   "nullable": true,
+   "editable": true,
+   "length": 30,
+   "domain": null,
+   "description": "{\"fieldValueType\":\"\",\"value\":\"The person who has the inside scoop on this development.\"}"
+  },
+  {
+   "alias": "created_user",
+   "name": "created_user",
+   "length": 255,
+   "domain": null,
+   "nullable": true,
+   "type": "esriFieldTypeString",
+   "editable": false
+  },
+  {
+   "alias": "created_date",
+   "name": "created_date",
+   "length": 29,
+   "domain": null,
+   "nullable": true,
+   "type": "esriFieldTypeDate",
+   "editable": false
+  },
+  {
+   "alias": "last_edited_user",
+   "name": "last_edited_user",
+   "length": 255,
+   "domain": null,
+   "nullable": true,
+   "type": "esriFieldTypeString",
+   "editable": false
+  },
+  {
+   "alias": "last_edited_date",
+   "name": "last_edited_date",
+   "length": 29,
+   "domain": null,
+   "nullable": true,
+   "type": "esriFieldTypeDate",
+   "editable": false
+  }
+ ],
+ "geometryField": {
+  "name": "shape",
+  "type": "esriFieldTypeGeometry",
+  "alias": "Shape",
+  "domain": null,
+  "editable": true,
+  "nullable": true,
+  "defaultValue": null,
+  "modelName": "shape"
+ },
+ "indexes": [
+  {
+   "name": "r52_sde_rowid_uk",
+   "fields": "objectid",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "a40_ix1",
+   "fields": "shape",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  }
+ ],
+ "dateFieldsTimeReference": {
+  "timeZone": "UTC",
+  "respectsDaylightSaving": false
+ },
+ "types": [
+  {
+   "id": "COM",
+   "name": "Commercial",
+   "domains": {
+    "load_type": {"type": "inherited"},
+    "iscomplete": {"type": "inherited"}
+   },
+   "templates": [
+    {
+     "name": "Commercial",
+     "description": "",
+     "prototype": {
+      "attributes": {
+       "name": null,
+       "iscomplete": null,
+       "load_type": "COM",
+       "est_in_use_date": null,
+       "est_complete_date": null,
+       "confidence_pct": null,
+       "notes": null,
+       "developer_name": null,
+       "developer_phone": null,
+       "developer_email": null,
+       "num_res_units": null,
+       "sqft": null,
+       "gas_load_est": null,
+       "kva_est": null,
+       "ava_contatct": null
+      }
+     },
+     "drawingTool": "esriFeatureEditToolPolygon"
+    }
+   ]
+  },
+  {
+   "id": "EV",
+   "name": "EV Charger",
+   "domains": {
+    "load_type": {"type": "inherited"},
+    "iscomplete": {"type": "inherited"}
+   },
+   "templates": [
+    {
+     "name": "EV Charger",
+     "description": "",
+     "prototype": {
+      "attributes": {
+       "name": null,
+       "iscomplete": null,
+       "load_type": "EV",
+       "est_in_use_date": null,
+       "est_complete_date": null,
+       "confidence_pct": null,
+       "notes": null,
+       "developer_name": null,
+       "developer_phone": null,
+       "developer_email": null,
+       "num_res_units": null,
+       "sqft": null,
+       "gas_load_est": null,
+       "kva_est": null,
+       "ava_contatct": null
+      }
+     },
+     "drawingTool": "esriFeatureEditToolPolygon"
+    }
+   ]
+  },
+  {
+   "id": "HTL",
+   "name": "Hotel",
+   "domains": {
+    "load_type": {"type": "inherited"},
+    "iscomplete": {"type": "inherited"}
+   },
+   "templates": [
+    {
+     "name": "Hotel",
+     "description": "",
+     "prototype": {
+      "attributes": {
+       "name": null,
+       "iscomplete": null,
+       "load_type": "HTL",
+       "est_in_use_date": null,
+       "est_complete_date": null,
+       "confidence_pct": null,
+       "notes": null,
+       "developer_name": null,
+       "developer_phone": null,
+       "developer_email": null,
+       "num_res_units": null,
+       "sqft": null,
+       "gas_load_est": null,
+       "kva_est": null,
+       "ava_contatct": null
+      }
+     },
+     "drawingTool": "esriFeatureEditToolPolygon"
+    }
+   ]
+  },
+  {
+   "id": "HYD",
+   "name": "Hydro",
+   "domains": {
+    "load_type": {"type": "inherited"},
+    "iscomplete": {"type": "inherited"}
+   },
+   "templates": [
+    {
+     "name": "Hydro",
+     "description": "",
+     "prototype": {
+      "attributes": {
+       "name": null,
+       "iscomplete": null,
+       "load_type": "HYD",
+       "est_in_use_date": null,
+       "est_complete_date": null,
+       "confidence_pct": null,
+       "notes": null,
+       "developer_name": null,
+       "developer_phone": null,
+       "developer_email": null,
+       "num_res_units": null,
+       "sqft": null,
+       "gas_load_est": null,
+       "kva_est": null,
+       "ava_contatct": null
+      }
+     },
+     "drawingTool": "esriFeatureEditToolPolygon"
+    }
+   ]
+  },
+  {
+   "id": "IND",
+   "name": "Industrial",
+   "domains": {
+    "load_type": {"type": "inherited"},
+    "iscomplete": {"type": "inherited"}
+   },
+   "templates": [
+    {
+     "name": "Industrial",
+     "description": "",
+     "prototype": {
+      "attributes": {
+       "name": null,
+       "iscomplete": null,
+       "load_type": "IND",
+       "est_in_use_date": null,
+       "est_complete_date": null,
+       "confidence_pct": null,
+       "notes": null,
+       "developer_name": null,
+       "developer_phone": null,
+       "developer_email": null,
+       "num_res_units": null,
+       "sqft": null,
+       "gas_load_est": null,
+       "kva_est": null,
+       "ava_contatct": null
+      }
+     },
+     "drawingTool": "esriFeatureEditToolPolygon"
+    }
+   ]
+  },
+  {
+   "id": "IRR",
+   "name": "Irrigation Pumps",
+   "domains": {
+    "load_type": {"type": "inherited"},
+    "iscomplete": {"type": "inherited"}
+   },
+   "templates": [
+    {
+     "name": "Irrigation Pumps",
+     "description": "",
+     "prototype": {
+      "attributes": {
+       "name": null,
+       "iscomplete": null,
+       "load_type": "IRR",
+       "est_in_use_date": null,
+       "est_complete_date": null,
+       "confidence_pct": null,
+       "notes": null,
+       "developer_name": null,
+       "developer_phone": null,
+       "developer_email": null,
+       "num_res_units": null,
+       "sqft": null,
+       "gas_load_est": null,
+       "kva_est": null,
+       "ava_contatct": null
+      }
+     },
+     "drawingTool": "esriFeatureEditToolPolygon"
+    }
+   ]
+  },
+  {
+   "id": "MFR",
+   "name": "Multi-Family Residential",
+   "domains": {
+    "load_type": {"type": "inherited"},
+    "iscomplete": {"type": "inherited"}
+   },
+   "templates": [
+    {
+     "name": "Multi-Family Residential",
+     "description": "",
+     "prototype": {
+      "attributes": {
+       "name": null,
+       "iscomplete": null,
+       "load_type": "MFR",
+       "est_in_use_date": null,
+       "est_complete_date": null,
+       "confidence_pct": null,
+       "notes": null,
+       "developer_name": null,
+       "developer_phone": null,
+       "developer_email": null,
+       "num_res_units": null,
+       "sqft": null,
+       "gas_load_est": null,
+       "kva_est": null,
+       "ava_contatct": null
+      }
+     },
+     "drawingTool": "esriFeatureEditToolPolygon"
+    }
+   ]
+  },
+  {
+   "id": "MIX",
+   "name": "Mixed-Use",
+   "domains": {
+    "load_type": {"type": "inherited"},
+    "iscomplete": {"type": "inherited"}
+   },
+   "templates": [
+    {
+     "name": "Mixed-Use",
+     "description": "",
+     "prototype": {
+      "attributes": {
+       "name": null,
+       "iscomplete": null,
+       "load_type": "MIX",
+       "est_in_use_date": null,
+       "est_complete_date": null,
+       "confidence_pct": null,
+       "notes": null,
+       "developer_name": null,
+       "developer_phone": null,
+       "developer_email": null,
+       "num_res_units": null,
+       "sqft": null,
+       "gas_load_est": null,
+       "kva_est": null,
+       "ava_contatct": null
+      }
+     },
+     "drawingTool": "esriFeatureEditToolPolygon"
+    }
+   ]
+  },
+  {
+   "id": "OTH",
+   "name": "Other",
+   "domains": {
+    "load_type": {"type": "inherited"},
+    "iscomplete": {"type": "inherited"}
+   },
+   "templates": [
+    {
+     "name": "Other",
+     "description": "",
+     "prototype": {
+      "attributes": {
+       "name": null,
+       "iscomplete": null,
+       "load_type": "OTH",
+       "est_in_use_date": null,
+       "est_complete_date": null,
+       "confidence_pct": null,
+       "notes": null,
+       "developer_name": null,
+       "developer_phone": null,
+       "developer_email": null,
+       "num_res_units": null,
+       "sqft": null,
+       "gas_load_est": null,
+       "kva_est": null,
+       "ava_contatct": null
+      }
+     },
+     "drawingTool": "esriFeatureEditToolPolygon"
+    }
+   ]
+  },
+  {
+   "id": "ROK",
+   "name": "Rock Crusher",
+   "domains": {
+    "load_type": {"type": "inherited"},
+    "iscomplete": {"type": "inherited"}
+   },
+   "templates": [
+    {
+     "name": "Rock Crusher",
+     "description": "",
+     "prototype": {
+      "attributes": {
+       "name": null,
+       "iscomplete": null,
+       "load_type": "ROK",
+       "est_in_use_date": null,
+       "est_complete_date": null,
+       "confidence_pct": null,
+       "notes": null,
+       "developer_name": null,
+       "developer_phone": null,
+       "developer_email": null,
+       "num_res_units": null,
+       "sqft": null,
+       "gas_load_est": null,
+       "kva_est": null,
+       "ava_contatct": null
+      }
+     },
+     "drawingTool": "esriFeatureEditToolPolygon"
+    }
+   ]
+  },
+  {
+   "id": "SFR",
+   "name": "Single Family Residential",
+   "domains": {
+    "load_type": {"type": "inherited"},
+    "iscomplete": {"type": "inherited"}
+   },
+   "templates": [
+    {
+     "name": "Single Family Residential",
+     "description": "",
+     "prototype": {
+      "attributes": {
+       "name": null,
+       "iscomplete": null,
+       "load_type": "SFR",
+       "est_in_use_date": null,
+       "est_complete_date": null,
+       "confidence_pct": null,
+       "notes": null,
+       "developer_name": null,
+       "developer_phone": null,
+       "developer_email": null,
+       "num_res_units": null,
+       "sqft": null,
+       "gas_load_est": null,
+       "kva_est": null,
+       "ava_contatct": null
+      }
+     },
+     "drawingTool": "esriFeatureEditToolPolygon"
+    }
+   ]
+  },
+  {
+   "id": "SOL",
+   "name": "Solar",
+   "domains": {
+    "load_type": {"type": "inherited"},
+    "iscomplete": {"type": "inherited"}
+   },
+   "templates": [
+    {
+     "name": "Solar",
+     "description": "",
+     "prototype": {
+      "attributes": {
+       "name": null,
+       "iscomplete": null,
+       "load_type": "SOL",
+       "est_in_use_date": null,
+       "est_complete_date": null,
+       "confidence_pct": null,
+       "notes": null,
+       "developer_name": null,
+       "developer_phone": null,
+       "developer_email": null,
+       "num_res_units": null,
+       "sqft": null,
+       "gas_load_est": null,
+       "kva_est": null,
+       "ava_contatct": null
+      }
+     },
+     "drawingTool": "esriFeatureEditToolPolygon"
+    }
+   ]
+  },
+  {
+   "id": "WND",
+   "name": "Wind Turbine",
+   "domains": {
+    "load_type": {"type": "inherited"},
+    "iscomplete": {"type": "inherited"}
+   },
+   "templates": [
+    {
+     "name": "Wind Turbine",
+     "description": "",
+     "prototype": {
+      "attributes": {
+       "name": null,
+       "iscomplete": null,
+       "load_type": "WND",
+       "est_in_use_date": null,
+       "est_complete_date": null,
+       "confidence_pct": null,
+       "notes": null,
+       "developer_name": null,
+       "developer_phone": null,
+       "developer_email": null,
+       "num_res_units": null,
+       "sqft": null,
+       "gas_load_est": null,
+       "kva_est": null,
+       "ava_contatct": null
+      }
+     },
+     "drawingTool": "esriFeatureEditToolPolygon"
+    }
+   ]
+  }
+ ],
+ "templates": [],
+ "useStandardizedQueries": true,
+ "standardMaxRecordCount": 2000,
+ "tileMaxRecordCount": 2000,
+ "standardMaxRecordCountNoGeometry": 16000,
+ "maxRecordCountFactor": 1,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "maxRecordCount": 2000,
+ "allowGeometryUpdates": true,
+ "capabilities": "Create,Editing,Uploads,Query,Update,Delete,Extract",
+ "enableZDefaults": true,
+ "zDefault": 0,
+ "allowUpdateWithoutMValues": true,
+ "definitionQuery": "IsComplete =  'No' Or IsComplete = 'Unsure'",
+ "hasGeometryProperties": true,
+ "geometryProperties": {
+  "shapeLengthFieldName": "SHAPE__Length",
+  "shapeAreaFieldName": "SHAPE__Area",
+  "units": "esriMeters"
+ },
+ "serviceItemId": "1fb9cabe45ab4cd28a37066547b40c99",
+ "hasMetadata": true,
+ "advancedEditingCapabilities": {
+  "supportedSqlFormatsInCalculate": [
+   "standard"
+  ]
+ },
+ "supportsApplyEditsWithGlobalIds": false,
+ "supportsAppend": true,
+ "supportedAppendFormats": "shapefile,geojson,csv,featureCollection",
+ "supportsQuantizationEditMode": true,
+ "supportsAttachmentsByUploadId": true,
+ "supportsAsyncDelete": true,
+ "supportsFieldDescriptionProperty": true,
+ "supportsExceedsLimitStatistics": true,
+ "sqlParserVersion": "PG_10.8.1"
+}
